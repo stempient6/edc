@@ -1,0 +1,263 @@
+/* sass goes here */
+@import "var";
+@import "reset";
+@import "fontawesome";
+@import url(https://fonts.googleapis.com/css?family=Passion+One:400,700,900);
+*{
+	box-sizing: border-box;
+}
+body, a {
+	font-family: 'Passion One', helvetica, sans-serif;
+	color: silver;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+}
+section {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#clients {
+ overflow: auto;
+ .img-container {
+ 	div {
+		display: flex;
+ 		align-items: space-around;
+ 		justify-content: space-around;
+			// &:before, &after {
+			// 	display: block;
+			// 	content: "";
+			// 	clear: both;
+			// }
+		}
+	
+	img{ 
+		width: 30vw;
+		height: auto;
+		margin: auto;
+
+		}
+	}
+	
+}
+#contact .content {
+	text-align: center;
+	margin: 5vw;
+	color: black;
+	h1{
+		font-size: 3em;
+	}
+	a{
+		color: black;
+	}
+}
+#bottom {
+	position: fixed; 
+	bottom: 10px;
+	right: 10px;
+	a {
+		color: black;
+		text-transform: capitalize;
+		&:hover {
+			text-transform: lowercase;
+		}
+	}
+
+}
+.welcome {
+	
+	background-image: url("../img/back.png");
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-order: column;
+	justify-content: center;
+	align-items:center;
+	img{
+		width: 40%;
+		height: auto;
+	}
+	h1 {
+		font-size: 3em;
+		font-weight: 100;
+		margin-bottom: 0;
+	}
+}
+.btn {
+	background-color:  red;
+	width: 20%;
+	margin: 0 auto;
+	border: px solid black;
+	
+	// display: flex;
+	// justify-content: center;
+	// align-items:center;
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		padding: 10px 0;
+		&:hover{
+			background-color:  black;
+			border: 1px solid red;
+		}
+
+	}
+}
+#enter {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	text-transform: uppercase;
+	color: black;
+	h1 {
+			font-size: 3em;
+			margin: 40px auto 0;
+		}
+	nav{
+		display: flex;
+		justify-content: space-around;
+		padding: 5px;
+		text-transform: uppercase;
+		border-bottom: 1px solid black;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		center: 0;
+		a {
+			color: black;
+			}
+		}
+		.img-center {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		.img1 {
+			width: 10%;
+			position: top center;
+			margin-top: -5px;
+			
+
+		
+		
+		}
+
+}
+.fa{
+	font-size: 3em;
+	float: left;
+	margin-right: 15px;
+}
+.services {
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	ul {
+		width: 40vw;
+		li {
+			display: inline-block;
+			width: 100%;
+			padding: 0 10px;
+		}
+
+	}
+	img {
+		width: 35vw;
+		border-radius: 10px;
+	}
+	h3 {
+		margin: 0;
+	}
+	.list-items {
+		float:right;
+		text-align: left;
+		width: 40%;
+	}
+	
+}
+#port {
+	overflow: auto;
+	width: 100%;
+	margin-top: 30px;
+	color: black;
+	footer {
+		text-align: center;
+	}
+	h2, h3 {
+		margin: 0;
+	}
+			.img-center {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		.img1 {
+			width: 10%;
+			position: top center;
+			margin-top: -5px;
+			
+
+		
+		
+		}
+}
+.main-body-qual{
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px 120px;
+}
+#clients, #contact {
+		.img-center {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		.img1 {
+			width: 10%;
+			position: top center;
+			margin-top: -5px;
+			
+
+		
+		
+		}
+}
+.icons {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	a {color: black;
+		&:hover {
+			color: gray;
+		}
+	}
+}
+//Enrique Meza http://mezafilms.com
+@media (max-width: 800px) {
+  .services {
+  	.fa{
+  		font-size: 1em;
+  	}
+  	ul{
+  		width: 90vw;
+  	}
+  	img {
+  		 display: none;
+  		}
+  	}
+  	#port {
+	overflow: scroll;
+
+	width: 98vw;
+	}
+	.main-body-qual {
+		padding: 10px 10px;
+	}
+}

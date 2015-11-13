@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  background-color: whitesmoke;
+  color: #171717;
+  padding: 10vw 5vw;
+}
+
+header {
+  background-color: #171717;
+  color: whitesmoke;
+}
+header nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav h1 {
+  display: inherit;
+  margin: 0 auto 0 0;
+}
+header nav h1 a {
+  display: inherit;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+header nav ul {
+  display: inherit;
+}
+header nav ul li {
+  display: inherit;
+}
+header nav ul a {
+  padding: 10px;
+  display: inherit;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  background-color: #e8e8e8;
+  padding: inherit;
+}
+
+.fixie {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 5px 15px darkgray;
+  border-bottom: 2px solid whitesmoke;
+}
+.fixie img {
+  width: 160px;
+  height: auto;
+}
+
+nav img {
+  width: 260px;
+  height: auto;
+  transition: all 200ms ease-in-out;
+}

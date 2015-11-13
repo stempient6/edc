@@ -1,0 +1,79 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+
+main {
+
+}
+form {
+	$grad: hsla(0, 0%, 80%, 1);
+	margin: 5vw 10vw;
+	box-sizing: border-box;
+	padding: 20px;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	background: {
+		image: linear-gradient(transparentize($grad, .80), transparentize($grad, .90));
+	}
+	fieldset {
+		display: flex;
+		flex-direction: column;
+		border: none;
+		padding: 0;
+	}
+	label {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	label[for="name"]{
+		div {display: flex;}
+	}
+	label[for="addr"]{
+		div {
+			display: flex;
+			flex-direction: column;
+			span {display: flex;}
+		}
+	}
+	label[for="card"]{
+		div {display: flex;}
+	}
+	label[for="pay"]{
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+	}
+	label > span {
+		color: lightgray;
+		margin: 0 5px;
+	}
+	input, select {
+		background-color: white;
+		flex: 1;
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid lightgray;
+		border-radius: 3px;
+		padding: 5px;
+		font-weight: 200;
+		font-size: 1.25em;
+		margin: 5px;
+	}
+	input, select {
+		&::-webkit-input-placeholder {color: black;}
+		&:-moz-placeholder {color: black;}
+		&::-moz-placeholder {color: black;}
+		&:-ms-input-placeholder {color: black;}
+	}
+	input[type="submit"]{
+		width: 200px;
+		color: white;
+		background-color: hsla(200, 40%, 60%, 1);
+		border-color: darken(hsla(200, 40%, 60%, 1), 10);
+	}
+}

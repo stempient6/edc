@@ -1,0 +1,84 @@
+@import "reset";
+@import "var";
+@import "logic";
+//@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+//@import "fontawesome";
+body{
+	background-color: hsla(0, 0%, 95%, 1);
+}
+main {
+	width: 50%;
+	height: 35vw;
+//	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	background:  {
+		image: url('../img/banner.jpg');
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+	border: 1px solid white;
+	box-shadow: -5px 5px 20px 0 transparentize(black, .5);
+}
+span {
+	&::before, &::after{
+		display:inline-block;
+		font:normal normal normal 14px/1 FontAwesome;
+		font-size:inherit;
+		text-rendering:auto;
+		-webkit-font-smoothing:antialiased;
+		-moz-osx-font-smoothing:grayscale;
+	}
+}
+#top-header, #bottom-header{
+	background-color: white;
+	@extend %clear-fix;
+}
+.ot-btn {
+	float:left;
+	span{
+		&:before {
+			content:'\f111';
+		}	
+
+	}
+}
+.user {
+		$user-btn: 3vw;
+		float:right;
+		border: 1px solid black;
+//		width: $user-btn;
+//		height: ($user-btn/2);
+		font-size: 1.5vw;
+		font-family: sans-serif;
+		padding: .4vw;
+		border-radius: 4px; 
+		display: inline-block;
+}
+header hr{
+	margin:0;
+}
+#bottom-header{
+
+}
+.nav-btns {
+	float:left;
+	span::before {
+		content:'\f060';		
+	}
+	span::after {
+		content:'\f061';
+	}
+}
+.refresh{
+	float:left;
+	span::before {
+		content:'\f021';
+	}
+	span:hover::before {
+			content:'\f00d';
+		}
+}

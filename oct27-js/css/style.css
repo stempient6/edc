@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  padding: 40px;
+}
+
+p {
+  background-color: #6895cf;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h2 {
+  background-color: rgba(104, 149, 207, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h1 {
+  background-color: rgba(104, 149, 207, 0.5);
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+}
+h1:nth-of-type(2) {
+  background-color: rgba(104, 149, 207, 0.25);
+}

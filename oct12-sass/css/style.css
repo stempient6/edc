@@ -1,0 +1,162 @@
+/* sass goes here */
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+nav::before, #about::before, .grid::before, #promos::before, nav::after, #about::after, .grid::after, #promos::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header, #about, #blog, #promos div, #contact > div {
+  padding: 50px 5vw;
+}
+
+header {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+header a {
+  border: none;
+}
+
+ul {
+  float: right;
+}
+
+h1 {
+  float: left;
+}
+
+li {
+  display: inline-block;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  margin: 15vw 0 15vw 0;
+  text-transform: uppercase;
+}
+
+#about div {
+  width: 33%;
+  float: left;
+  margin-right: 6%;
+}
+#about img {
+  float: right;
+  width: 60%;
+  height: auto;
+}
+
+#blog {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#blog span {
+  display: inline-block;
+  padding: 2.5vw;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  border-bottom: 20px solid rgba(0, 0, 0, 0.1);
+}
+.grid div {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+}
+.grid div:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+#promos div {
+  box-sizing: border-box;
+  width: 33.3333%;
+  float: left;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  color: red;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 3vw;
+  height: 1.5vw;
+  line-height: 1.5vw;
+  text-align: center;
+  position: relative;
+  margin-bottom: 3vw;
+}
+.icon::before {
+  content: "";
+  display: block;
+  border-width: 1.5vw 1.5vw 1vw 1.5vw;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  border-style: solid;
+  position: absolute;
+  bottom: 100%;
+}
+.icon::after {
+  content: "";
+  display: block;
+  border-width: 1vw 1.5vw 1.5vw 1.5vw;
+  border-color: rgba(0, 0, 0, 0.1) transparent transparent transparent;
+  border-style: solid;
+  position: absolute;
+  top: 100%;
+}
+
+#contact fieldset {
+  border: none;
+  padding: 0;
+}
+#contact fieldset:first-child label {
+  width: 50%;
+}
+#contact > div {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+#contact label {
+  display: block;
+  float: left;
+}

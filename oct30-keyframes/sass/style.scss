@@ -1,0 +1,134 @@
+$red: hsla(0, 100%, 43%, 1);
+$yellow: hsla(55, 100%, 43%, 1);
+$green: hsla(100, 100%, 43%, 1);
+$outline: hsla(0, 0%, 34%, 1);
+$clr: hsla(0, 0%, 77%, 1);
+@import "fontawesome";
+
+html, body {
+	height: 100%;
+	background-color: hsla(0, 0%, 96%, 1);
+}
+header{
+	overflow: hidden;
+}
+#hero{
+	width: 500%;
+	height: 45vw;
+	display: flex;
+	flex-wrap: no-wrap;
+	position: relative;
+	div{
+		$divcolors: (360/5);
+		height: 45vw;
+		width: (100% / 5);
+		background:{
+			position: center;
+			size: cover;
+			repeat: no-repeat;
+		}
+		@for $i from 1 through 5{
+			$clr: $divcolors * $i;
+			&:nth-of-type(#{$i}){
+				background-color: hsla($clr, 40%, 60%, 1);
+				background-image: url('../img/jack-#{$i}.jpg');
+			}
+		}
+
+	}
+	button{
+		position: absolute;
+		top: 50%;
+		transform: translate3d(0, -50%, 0);
+		width: 10vw;
+		height: 5vw;
+		z-index: 10;
+		background-color: hsla(0, 0%, 100%, .15);
+		font-size: 1.25em;
+		color: white;
+	}
+	button:first-child{
+		left:0;
+	}
+
+	
+	button:last-child{
+		left:87vw;
+	}
+	div{
+		position: absolute;
+		z-index: 1;
+		left: 100%;
+		transition: left 750ms ease-in-out;
+		&.active{
+			z-index: 2;
+			left: 0;
+		}
+	}
+}
+
+main {
+	height: inherit;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	div:first-child {
+		$litesize: 5vw;
+		background-color: lightgray;
+		display: flex;
+		flex-direction: column;
+		padding: $litesize / 4;
+		border-radius: $litesize / 8;
+		border: 1px solid darken(lightgray, 10);
+		margin: $litesize;
+		span {
+			display: block;
+			width: $litesize;
+			height: $litesize;
+			background-color: $yellow;
+			border-radius: 100%;
+			margin: $litesize / 4;
+			border: 1px solid darken(lightgray, 10);
+			&.lit, &:hover {
+				background-color: lighten($yellow, 20);
+				cursor: pointer;
+			}
+			&:first-child{
+				background-color: $red;
+				&.lit,&:hover {
+					background-color: lighten($red, 20);
+				}
+			}
+			&:last-child{
+				background-color: $green;
+				&.lit, &:hover {
+					background-color: lighten($green, 20);
+				}
+			}
+		}
+	}
+	div:last-child {
+		$imgsize: 12vw;
+		width: $imgsize;
+		height: $imgsize * 2.22222;
+		margin: 5vw;
+		background: {
+			position: center;
+			size: cover;
+		}
+		animation: walking .75s infinite;
+	}
+}
+
+
+@keyframes walking {
+	$percdiv: (100 / 8);
+	@for $i from 1 through 8 {
+		$perc: ($percdiv * $i);
+		//@debug '#{$perc}%';
+		#{$perc}% {
+			background-image: url('../img/walk#{$i}.gif');
+		}
+	}
+}

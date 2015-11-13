@@ -1,0 +1,44 @@
+@import "variables";
+@import "reset";
+// @import "fontawesome";
+header {
+		width: 100%;
+		height:35vw;
+		background: {
+		image: url('../img/guardians.jpg');
+		position: center;
+		size: cover;
+		
+	}
+}
+nav {
+	position: fixed;
+	margin-bottom: 50px;
+	background-color: white;
+
+}
+ul  {
+	display: flex;
+	justify-content: space-around;
+	align-items: space-around;
+	width: 100vw;
+//	position: fixed;
+	li {
+		display: inline-block;
+		padding: 10px;
+		
+	}
+}
+$chars: bereet carina collector cosmo drax garthan-saal hpward-the-duck irani-real korath-thak fraglin-obfonteri nebula peter-quil rhomann-dey rochet-racoon ronan yondu;
+@each $char in $chars {
+	$i: index($chars, $char);
+	section:nth-child(#{$i}){
+		span {
+			background-image: url('../img/bio-bereet.jpg');
+		}
+	}
+}
+span {
+	width: 35px;
+	height: 35px;  
+}

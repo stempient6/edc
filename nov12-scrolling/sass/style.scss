@@ -1,0 +1,66 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+$white: hsla(1, 0%, 96%, 1);
+$black: hsla(0, 0%, 9%, 1);
+
+body{
+	background-color: $white;
+	color: $black;
+	padding: 10vw 5vw;
+}
+header{
+	background-color: $black;
+	color: $white;
+
+
+	
+	nav{
+		display: flex;
+		
+		h1{
+			display: inherit;
+			margin: 0 auto 0 0;
+			a{
+				display: inherit;
+				align-items: center;
+				padding: 10px;
+			}
+		}
+		ul{
+			display: inherit;
+			li{
+				display: inherit;
+			}
+			a{
+				padding: 10px;
+				display: inherit;
+				align-items: center;
+
+			}
+		}
+	}
+}
+main {
+	background-color: darken($white, 5);
+	padding: inherit;
+}
+.fixie{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 5px 5px 15px darkgray;
+	border-bottom: 2px solid $white;
+	img {
+		width: 160px;
+		height: auto;
+	}
+}
+nav img{
+		width: 260px;
+		height: auto;
+		transition: all 200ms ease-in-out;
+	}

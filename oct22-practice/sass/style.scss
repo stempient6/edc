@@ -1,0 +1,101 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+@import "each";
+%clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+$character-list: starlord gamora drax rocket groot ronan nebula korath;
+@each $character in $character-list {
+	$i: index($character-list, $character);
+	section:nth-child(#{$i}){
+		&::before{
+			content:'#{$character}';
+			text-transform: uppercase;
+		}
+
+	}
+}
+* {
+	box-sizing: border-box;
+}
+nav{
+	color: white;
+	padding: 100px 20px 150px;
+	margin-bottom: 10px;
+	background-image: url(../img/guardians.jpg);
+	background-size: cover;
+	background-position: fixed;
+	h1{
+		text-align: center;
+		color: white;
+		padding: 150px 20px;
+		font-size: 3em;
+
+	}
+	ul{
+		display: flex;
+		justify-content: space-around;
+	}	
+
+}
+section {
+		
+	&:nth-of-type(3n + 3){
+		float: right;
+		img{
+			float: left;
+		}
+	}
+
+	width: 42vw;
+	margin: 1vw;
+	float: left;
+	
+	img {
+		width: 10vw;
+		float: right;
+		margin: 1vw;
+	}
+	p {
+		padding: 10px;
+	}
+	&:nth-of-type(3n + 1){
+		background-color: lightgray;
+		width: 100vw;
+		@extend %clearfix;
+		img{
+			width: 15vw;
+			float: left;
+		}
+	}
+	&:last-of-type {
+		width: 100vw;
+		img{
+			float: left;
+			width: 15vw;
+		}
+	}
+
+}
+.main-body {
+	display: block;
+	&:after {
+		@extent %clearfix;
+	}
+	
+}
+.lists {
+	display: flex;
+	justify-content: space-around;
+	@extent %clearfix;
+}
+.spacer {
+	width: 100vw;
+	@extend %clearfix;
+}
+footer {
+	text-align: center;
+}

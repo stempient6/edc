@@ -1,0 +1,119 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+main{
+	width: 300px;
+	height: 300px;
+	background-color: pink;
+	margin: 50px auto;
+	position: relative;
+	span{
+		position: absolute;
+		top: 0;
+		right:0;
+		bottom:0;
+		left:0;
+		background-color: purple;
+		z-index: 1;
+	}
+	div:first-of-type{
+		position: absolute;
+		width: 20%;
+		height: 10px;
+		background-color: black;
+		top: 10%;
+		z-index: 10;
+	}
+	div:nth-of-type(2){
+		position: absolute;
+		width: 10px;
+		height: 30%;
+		background-color: black;
+		top: 10%;
+		left:20%;
+		z-index: 10;
+	}
+	div:nth-of-type(3){
+		position: absolute;
+		width: 30%;
+		height: 10px;
+		background-color: black;
+		top: 40%;
+		left:20%;
+		z-index: 10;
+	}
+	div:nth-of-type(4){
+		position: absolute;
+		width: 10px;
+		height: 33%;
+		background-color: black;
+		top: 10%;
+		left:48%;
+		z-index: 10;
+	}
+	div:nth-of-type(5){
+		position: absolute;
+		width: 30%;
+		height: 10px;
+		background-color: black;
+		top: 10%;
+		left:48%;
+		z-index: 10;
+	}
+	div:nth-of-type(6){
+		position: absolute;
+		width: 10px;
+		height: 60%;
+		background-color: black;
+		top: 10%;
+		left:75%;
+		z-index: 10;
+	}
+	div:nth-of-type(7){
+		position: absolute;
+		width: 25%;
+		height: 10px;
+		background-color: black;
+		top: 70%;
+		left:75%;
+		z-index: 10;
+	}
+	div:last-of-type{
+		position: absolute;
+		width: 10px;
+		height: 20px;
+		background-color: black;
+		top: 68%;
+		right:0;
+		z-index: 20;
+	}
+	// div:nth-of-type(odd){
+	// 	border-top:1px solid green;	
+	// 	border-bottom:1px solid green;	
+	// 	background-color: purple;		
+
+	// }
+	// div:nth-of-type(even){
+	// 	border-right:1px solid green;	
+	// 	border-left:1px solid green;	
+	// 	background-color: purple;		
+
+	// }
+}
+p, input{
+	border:1px solid gray;
+	padding: 10px;
+	margin: 5vw;
+	background-color: white;
+	border-radius: 10px;
+}
+body{
+	background-color: hsla(10, 0%, 10%, .25);
+}
+h1{
+	text-align: center;
+	margin: 5vw;
+	border: 2px solid black;
+}

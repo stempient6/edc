@@ -1,0 +1,31 @@
+$animals: dog cat lion tiger bear kangaroo fish snake horse cow moose deer farret;
+$color: (360 / length($animals));
+@debug $color;
+@debug length($animals);
+@each $animal in $animals{
+	$i: index($animals, $animal);
+	$hue: ($color * $i) - $color; 
+	ul li:nth-child(#{$i}){
+		background-color: hsla($hue, 40%, 60%, 1);
+		&::before{
+			content:'#{$animal}';
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+}
+@for $i from 1 to 5 {
+	ol li:nth-child(#{$i}) {
+		font-size: 1em * $i;
+		&::before {
+			content: '#{$i}'
+		}
+	}
+}
+
+ul, ol {
+	margin-left: 10px;
+	li {
+		padding: 10px;
+	}
+}

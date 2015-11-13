@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+main {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  margin: 50px auto;
+  position: relative;
+}
+main span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: purple;
+  z-index: 1;
+}
+main div:first-of-type {
+  position: absolute;
+  width: 20%;
+  height: 10px;
+  background-color: black;
+  top: 10%;
+  z-index: 10;
+}
+main div:nth-of-type(2) {
+  position: absolute;
+  width: 10px;
+  height: 30%;
+  background-color: black;
+  top: 10%;
+  left: 20%;
+  z-index: 10;
+}
+main div:nth-of-type(3) {
+  position: absolute;
+  width: 30%;
+  height: 10px;
+  background-color: black;
+  top: 40%;
+  left: 20%;
+  z-index: 10;
+}
+main div:nth-of-type(4) {
+  position: absolute;
+  width: 10px;
+  height: 33%;
+  background-color: black;
+  top: 10%;
+  left: 48%;
+  z-index: 10;
+}
+main div:nth-of-type(5) {
+  position: absolute;
+  width: 30%;
+  height: 10px;
+  background-color: black;
+  top: 10%;
+  left: 48%;
+  z-index: 10;
+}
+main div:nth-of-type(6) {
+  position: absolute;
+  width: 10px;
+  height: 60%;
+  background-color: black;
+  top: 10%;
+  left: 75%;
+  z-index: 10;
+}
+main div:nth-of-type(7) {
+  position: absolute;
+  width: 25%;
+  height: 10px;
+  background-color: black;
+  top: 70%;
+  left: 75%;
+  z-index: 10;
+}
+main div:last-of-type {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background-color: black;
+  top: 68%;
+  right: 0;
+  z-index: 20;
+}
+
+p, input {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 5vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+body {
+  background-color: rgba(26, 26, 26, 0.25);
+}
+
+h1 {
+  text-align: center;
+  margin: 5vw;
+  border: 2px solid black;
+}

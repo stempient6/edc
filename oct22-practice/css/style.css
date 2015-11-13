@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+ul li:nth-child(1) {
+  background-color: #c27070;
+}
+ul li:nth-child(1)::before {
+  content: "dog";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(2) {
+  background-color: #c29670;
+}
+ul li:nth-child(2)::before {
+  content: "cat";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(3) {
+  background-color: #c2bc70;
+}
+ul li:nth-child(3)::before {
+  content: "lion";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(4) {
+  background-color: #a2c270;
+}
+ul li:nth-child(4)::before {
+  content: "tiger";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(5) {
+  background-color: #7dc270;
+}
+ul li:nth-child(5)::before {
+  content: "bear";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(6) {
+  background-color: #70c289;
+}
+ul li:nth-child(6)::before {
+  content: "kangaroo";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(7) {
+  background-color: #70c2af;
+}
+ul li:nth-child(7)::before {
+  content: "fish";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(8) {
+  background-color: #70afc2;
+}
+ul li:nth-child(8)::before {
+  content: "snake";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(9) {
+  background-color: #7089c2;
+}
+ul li:nth-child(9)::before {
+  content: "horse";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(10) {
+  background-color: #7d70c2;
+}
+ul li:nth-child(10)::before {
+  content: "cow";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(11) {
+  background-color: #a270c2;
+}
+ul li:nth-child(11)::before {
+  content: "moose";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(12) {
+  background-color: #c270bc;
+}
+ul li:nth-child(12)::before {
+  content: "deer";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ul li:nth-child(13) {
+  background-color: #c27096;
+}
+ul li:nth-child(13)::before {
+  content: "farret";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+ol li:nth-child(1) {
+  font-size: 1em;
+}
+ol li:nth-child(1)::before {
+  content: "1";
+}
+
+ol li:nth-child(2) {
+  font-size: 2em;
+}
+ol li:nth-child(2)::before {
+  content: "2";
+}
+
+ol li:nth-child(3) {
+  font-size: 3em;
+}
+ol li:nth-child(3)::before {
+  content: "3";
+}
+
+ol li:nth-child(4) {
+  font-size: 4em;
+}
+ol li:nth-child(4)::before {
+  content: "4";
+}
+
+ul, ol {
+  margin-left: 10px;
+}
+ul li, ol li {
+  padding: 10px;
+}
+
+section:nth-of-type(3n + 1), .spacer {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section:nth-child(1)::before {
+  content: "starlord";
+  text-transform: uppercase;
+}
+
+section:nth-child(2)::before {
+  content: "gamora";
+  text-transform: uppercase;
+}
+
+section:nth-child(3)::before {
+  content: "drax";
+  text-transform: uppercase;
+}
+
+section:nth-child(4)::before {
+  content: "rocket";
+  text-transform: uppercase;
+}
+
+section:nth-child(5)::before {
+  content: "groot";
+  text-transform: uppercase;
+}
+
+section:nth-child(6)::before {
+  content: "ronan";
+  text-transform: uppercase;
+}
+
+section:nth-child(7)::before {
+  content: "nebula";
+  text-transform: uppercase;
+}
+
+section:nth-child(8)::before {
+  content: "korath";
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  color: white;
+  padding: 100px 20px 150px;
+  margin-bottom: 10px;
+  background-image: url(../img/guardians.jpg);
+  background-size: cover;
+  background-position: fixed;
+}
+nav h1 {
+  text-align: center;
+  color: white;
+  padding: 150px 20px;
+  font-size: 3em;
+}
+nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+section {
+  width: 42vw;
+  margin: 1vw;
+  float: left;
+}
+section:nth-of-type(3n + 3) {
+  float: right;
+}
+section:nth-of-type(3n + 3) img {
+  float: left;
+}
+section img {
+  width: 10vw;
+  float: right;
+  margin: 1vw;
+}
+section p {
+  padding: 10px;
+}
+section:nth-of-type(3n + 1) {
+  background-color: lightgray;
+  width: 100vw;
+}
+section:nth-of-type(3n + 1) img {
+  width: 15vw;
+  float: left;
+}
+section:last-of-type {
+  width: 100vw;
+}
+section:last-of-type img {
+  float: left;
+  width: 15vw;
+}
+
+.main-body {
+  display: block;
+}
+.main-body:after {
+  @extent %clearfix;
+}
+
+.lists {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  @extent %clearfix;
+}
+
+.spacer {
+  width: 100vw;
+}
+
+footer {
+  text-align: center;
+}

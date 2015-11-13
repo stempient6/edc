@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+header {
+  width: 100%;
+  height: 35vw;
+  background-image: url("../img/guardians.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  width: 100vw;
+}
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+section:nth-child(1) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(2) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(3) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(4) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(5) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(6) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(7) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(8) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(9) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(10) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(11) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(12) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(13) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(14) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(15) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+section:nth-child(16) span {
+  background-image: url("../img/bio-bereet.jpg");
+}
+
+span {
+  width: 35px;
+  height: 35px;
+}

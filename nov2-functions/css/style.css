@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+main, header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main > button, header > button {
+  margin: 10px;
+  padding: 5px;
+  border: inherit;
+  border-radius: 2px;
+  border-color: #7aa3b8;
+  color: white;
+}
+main div, header div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 200;
+  font-size: 1.25em;
+  line-height: 1.25;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 2px;
+}
+main input, main button, header input, header button {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 10px;
+  padding: 5px;
+  border: inherit;
+  border-radius: 2px;
+  border-color: #7aa3b8;
+  color: white;
+}
+main input, header input {
+  color: gray;
+}
+main input:disabled, header input:disabled {
+  background-color: #f2f2f2;
+}
+main input[type='button'], main button, header input[type='button'], header button {
+  background-color: #9cbac9;
+  border-color: #598ca6;
+  color: white;
+}
+main input[type='button']:hover, main button:hover, header input[type='button']:hover, header button:hover {
+  background-color: #7aa3b8;
+  border-color: #598ca6;
+  cursor: pointer;
+}
+main input[type='button']:disabled, main button:disabled, header input[type='button']:disabled, header button:disabled {
+  background-color: #b3b3b3;
+  border-color: gray;
+  cursor: not-allowed;
+}

@@ -1,0 +1,75 @@
+@import "variables";
+@import "reset";
+
+//@import "fontawesome";
+* {
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+div {
+	width: 33.3333%;
+	padding: 10px;
+	overflow: hidden;
+	font-family: sans-serif;
+	position: relative;
+	// &:nth-of-type(odd){
+	// 	background-color: hsla(0, 0%, 0%, .1);
+	// }
+	// &:nth-of-type(even){
+	// 	background-color: hsla(0, 0%, 0%, .05);
+	// }
+	$hue: (360/40);
+	//@debug $hue;
+	@for $i from 1 through 40 {
+	&:nth-child(#{$i}){
+		$clr: ($hue * $i) - $hue;
+		background-color: hsla($clr, 30%, 60%, .5);
+
+		&:after {
+			content: "#{$i}";
+			}
+		}
+	}
+	
+}
+div::after {
+	content:"";
+	display: block;
+	width: 3em;
+	height: 3em;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0 0 0 100%;
+	text-align: center;
+	line-height: 2em;
+	box-shadow: 1px 1px 15px #888888;
+
+}
+div::before {
+	content:"";
+	display: block;
+	width: 3em;
+	height: 3em;
+	float: right;
+
+	// background-color: red;
+	// text-align: center;
+	// line-height: 2em;
+}
+span {
+	display: block;
+	font-weight: 700;
+	font-size: 1.5em;
+	
+}
+img {
+	float: left;
+	margin-right: 10px;
+	border: 3px solid white;
+}

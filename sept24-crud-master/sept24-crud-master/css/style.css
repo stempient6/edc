@@ -1,0 +1,31 @@
+body{
+	background-color: silver;
+	margin:20px 20px;
+	color:silver;
+}
+#frame {
+	display: block;
+	width:300px;
+	margin:10px auto;
+	background-color: black;
+	min-height: 100px;
+	padding: 10px;
+	border-radius: 10px;
+	border:1px solid red;
+	box-shadow: 10px 10px 10px #888888;
+}
+
+#left_button{
+	float:left;
+}
+#right_button {
+	float: right;
+}
+ol{
+	background-color: red;
+	border-radius: 5px;	
+}
+li {
+	text-align: left;
+	font-size: 30px;
+}

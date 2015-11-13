@@ -1,0 +1,60 @@
+	
+$key: hsla(random(360), 100%, 50%, 1);
+$red: $key;
+$orange: lighten(adjust-hue($key, 35), 20);
+$blue: darken(adjust-hue($key, 60), 20);
+$green: invert(adjust-hue($key, 275));
+$yellow: complement(adjust-hue($key, 50));
+$rand: random(360);
+$rand-color: hsla($rand, 50%, 50%, 1);
+$deg: hue($rand-color);
+@mixin div-padding($x){
+	padding: $x;
+}
+@mixin insta-border($x, $y, $z){
+	border-width:$y;
+	border-style:$x;
+	border-color:$z;
+	padding: $y 50px 50px 50px;
+	color: $z;
+	text-shadow: 1px 1px 0 darken($z, 30);
+}
+body{
+	margin: 0 auto;
+}
+main{
+	display:flex;	
+	justify-content: space-around;
+}
+main div{
+	width: 200px;
+	height: 100px;
+	border: 4px solid black;
+	border-radius: 10px;
+	margin: 5px;
+	box-shadow: 10px 10px 15px #888888;
+	&:nth-of-type(1){
+	background-color: $blue;
+	@include div-padding(20px);
+	&::before {
+		content: '#{$deg}';
+		}
+	}
+	&:nth-of-type(2){
+		background-color: $green;
+		@include div-padding(40px);	
+		@include insta-border(groove, 10px, $red);
+		
+	}
+	&:nth-of-type(3){
+		background-color: $red;
+		@include insta-border(double, 15px, $green);
+	}
+	&:nth-of-type(4){
+		background-color: $yellow;
+		@include insta-border(inset, 15px, $blue);
+	}
+	&:nth-of-type(5){
+		background-color: $orange;
+	}
+}

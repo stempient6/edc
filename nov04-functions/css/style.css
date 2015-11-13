@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+form {
+  margin: 5vw 10vw;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background-image: linear-gradient(rgba(204, 204, 204, 0.2), rgba(204, 204, 204, 0.1));
+}
+form fieldset {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  padding: 0;
+}
+form label {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+form label[for="name"] div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+form label[for="addr"] div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form label[for="addr"] div span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+form label[for="card"] div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+form label[for="pay"] div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+form label > span {
+  color: lightgray;
+  margin: 0 5px;
+}
+form input, form select {
+  background-color: white;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: 200;
+  font-size: 1.25em;
+  margin: 5px;
+}
+form input::-webkit-input-placeholder, form select::-webkit-input-placeholder {
+  color: black;
+}
+form input:-moz-placeholder, form select:-moz-placeholder {
+  color: black;
+}
+form input::-moz-placeholder, form select::-moz-placeholder {
+  color: black;
+}
+form input:-ms-input-placeholder, form select:-ms-input-placeholder {
+  color: black;
+}
+form input[type="submit"] {
+  width: 200px;
+  color: white;
+  background-color: #70a7c2;
+  border-color: #4d91b3;
+}

@@ -1,0 +1,158 @@
+/* sass goes here */
+@import "reset";
+%clear-fix{
+	&::before, &::after {
+		content:"";
+		display: block;
+		clear:both;
+	}
+}
+%content {
+	padding: 50px 5vw;
+}
+header {
+	color: white;
+	background-image: linear-gradient(hsla(0, 0%, 0%, .3),hsla(0, 0%, 0%, .3)), url(../img/slide01.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	@extend %content;
+	a {
+		border: none;
+	}
+}
+
+ul {
+	float: right;
+	
+}
+h1 {
+	float: left;	
+}
+li {
+	display: inline-block;
+}
+nav {
+	@extend %clear-fix;
+}
+h2 {
+	text-align: center;
+	font-size: 3vw;
+	margin: 15vw 0 15vw 0;
+	text-transform: uppercase;
+}
+#about{ 
+	@extend %content;
+	@extend %clear-fix;
+	div {
+		width: 33%;
+		float: left;
+		margin-right: 6%;
+	}
+	img {
+		float: right;
+		width: 60%;
+		height: auto;
+	}
+}
+#blog{
+	@extend %content;
+	background-color: hsla(0, 0%, 0%, .10);
+	span {
+		display: inline-block;
+		padding: 2.5vw;
+	}
+}
+.grid{
+	@extend %clear-fix;
+	img{
+		width:100%;
+		height:auto;
+		border-bottom: 20px solid hsla(0, 0%, 0%, .10);
+	}
+ 	div{
+		width:30%;
+		float: left;
+		margin-right: 5%;
+		margin-bottom: 5%;
+		background-color: white;
+	}
+	div:nth-of-type(3n){
+		margin-right: 0;
+	}
+}
+#promos {
+	@extend %clear-fix;
+	div{
+	box-sizing: border-box;
+	@extend %content;
+	width: 33.3333%;
+	float:left;
+	}
+}
+.btn {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	&:hover{
+		color: red;
+		background-color: hsla(0, 0%, 0%, .1)
+	}
+}
+.icon {
+	$ico: 3vw;
+	$ico-half:($ico / 2);
+	$ico-third:($ico / 3);
+	background-color: hsla(0, 0%, 0%, .10);
+	display: inline-block;
+	width: $ico;
+	height: $ico-half;
+	line-height: $ico-half;
+	text-align: center;
+	position: relative;
+	margin-bottom: $ico;
+	&::before{
+		content:"";
+		display: block;
+		border-width: $ico-half $ico-half $ico-third $ico-half;
+		border-color: transparent transparent hsla(0, 0%, 0%, .10) transparent;
+		border-style: solid;
+		position: absolute;
+		bottom: 100%
+	}
+	&::after{
+		content:"";
+		display: block;
+		border-width: $ico-third $ico-half $ico-half $ico-half;
+		border-color: hsla(0, 0%, 0%, .10) transparent transparent transparent;
+		border-style: solid;
+		position: absolute;
+		top: 100%;
+
+	}
+}
+#contact {
+	fieldset {
+		border: none;
+		padding: 0;
+		&:first-child{
+		 label{
+		 	width: 50%;
+		 }
+			
+		}
+	}
+	& > div{
+		width: 50%;
+		float: left;
+		@extend %content;
+		box-sizing: border-box;
+	}
+	label{
+	display: block;
+	float: left;
+	}
+}

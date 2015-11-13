@@ -1,0 +1,26 @@
+@import "reset";
+@import "fontawesome";
+@import "variables";
+/* sass goes here */
+%clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+nav {
+	@extend %clearfix;
+	h1 {
+		float: left;
+	}
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			padding: 0 10px;
+		}
+	}
+}
+.banner {
+	width: 100vw;
+	background-image: 
+}

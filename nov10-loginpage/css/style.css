@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form {
+  width: 300px;
+  height: 260px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: linear-gradient(gray, lightgray, gray);
+  box-shadow: 5px 5px 10px darkgray;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  width: 90%;
+  background: linear-gradient(gray, lightgray);
+}
+input:focus {
+  background: none;
+  background-color: rgba(0, 15, 92, 0.25);
+  border: 2px solid black;
+}
+
+button {
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: rgba(0, 15, 92, 0.25);
+  color: white;
+  border: 2px solid darkgray;
+}
+button:hover {
+  background-color: rgba(0, 15, 92, 0.5);
+}

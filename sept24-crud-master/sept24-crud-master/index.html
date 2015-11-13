@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sortable Shopping List</title>
+		<link rel="stylesheet" href="css/style.css">
+		  
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
+
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+	</head>
+	<body>
+		<div id="frame">
+		<div id="button_wrapper"><button id="left_button" onclick="make_list()">Add Item</button>
+		<button id="right_button" onclick="delete_function()">Delete Items</button></div>
+		<br style="clear:both;">
+		<ol id="sortable"></ol>
+		
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>	
+	
+	</body>
+</html>
