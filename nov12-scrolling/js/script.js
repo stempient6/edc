@@ -54,6 +54,6 @@
 		var degreeCon = Math.ceil( (360 / (docH - winH)) * 100) / 100;
 		var hue = Math.round(degreeCon * scrollDist);
 		bodyObj.style.backgroundColor = 'hsla('+hue+', 30%, 50%, 1)';
-		console.log(hue);
+		//console.log(hue);
 	}
 })();

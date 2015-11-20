@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  font-weight: 200;
+  padding: 10vw 5vw;
+  background-color: whitesmoke;
+  color: #171717;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+header {
+  background-color: #171717;
+  color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+header nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+header nav h1, header nav ul, header nav li, header nav a {
+  display: inherit;
+}
+header nav h1 {
+  margin: 0 auto 0 0;
+}
+header nav a {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+header #progressBar {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background-color: red;
+  transition: width 50ms ease-in-out;
+}
+
+main {
+  background-color: #ededed;
+}
+main .main-content {
+  padding: 10vw 5vw;
+}
+
+section {
+  padding: 10vw 5vw;
+  background-color: #dbdbdb;
+}
+section .animWrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+section .animWrap img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 1px solid #c2c2c2;
+}
+section .animWrap div {
+  padding: 10px;
+  position: relative;
+  transition: all 1000ms ease-in-out;
+}
+section .animWrap div:first-child {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  right: 100%;
+}
+section .animWrap div:last-child {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  left: 100%;
+}
+section .animWrap.animation div:first-child {
+  right: 0;
+}
+section .animWrap.animation div:last-child {
+  left: 0;
+}
+
+section:nth-of-type(even) .animWrap div:first-child {
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+section:nth-of-type(even) .animWrap div:last-child {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section#comments li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5vw 0;
+  margin-bottom: 5vw;
+  border-bottom: 1px solid #c2c2c2;
+}
+section#comments li:last-child {
+  border: none;
+}
+section#comments img {
+  border-radius: 100%;
+  width: 85px;
+  height: 85px;
+  margin-right: 20px;
+}

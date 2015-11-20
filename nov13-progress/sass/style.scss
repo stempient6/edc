@@ -1,0 +1,125 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+$black: hsla(0, 0%, 9%, 1);
+$white: hsla(0, 0%, 96%, 1);
+
+body{
+	font:{
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+	padding: 10vw 5vw;
+	background-color: $white;
+	color: $black;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+header{
+	background-color: $black;
+	color: $white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	nav{
+		display: flex;
+		position: relative;
+		h1, ul, li, a{
+			display: inherit;
+		}
+		h1{
+			margin: 0 auto 0 0;
+		}
+		a{
+			align-items: center;
+			padding: 10px;
+		}
+	}
+	#progressBar {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 5px;
+		width: 0;
+		background-color: red;
+		transition: width 50ms ease-in-out;
+	}
+}
+main {
+	background-color: darken($white, 3);
+	.main-content{
+		padding: 10vw 5vw;
+	}
+}
+section {
+	padding: 10vw 5vw;
+	background-color: darken($white, 10);
+	.animWrap {
+		display: flex;
+		img {
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			padding: 10px;
+			background-color: $white;
+			border: 1px solid darken($white, 20);
+		}
+		div {
+			padding: 10px;
+			position: relative;
+			transition: all 1000ms ease-in-out;
+		}
+		div:first-child{
+			flex: 1;
+			right: 100%;
+		}
+		div:last-child{
+			flex: 2;
+			left: 100%;
+		}
+		&.animation{
+			div:first-child{
+				right: 0;
+			}
+			div:last-child{
+				left: 0;
+			}
+		}
+	}
+}
+section:nth-of-type(even) {
+	.animWrap {
+		div:first-child{
+			flex: 2;
+		}
+		div:last-child{
+			flex:1;
+		}
+	}
+}
+section#comments{
+	li {
+		display: flex;
+		align-items: flex-start;
+		padding: 5vw 0;
+		margin-bottom: 5vw;
+		border-bottom: 1px solid darken($white, 20);
+		&:last-child {
+			border: none;
+		}
+	}
+	img {
+		border-radius: 100%;
+		width: 85px;
+		height: 85px;
+		margin-right: 20px;
+
+	}
+}

@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContainer {
+  width: 500px;
+  height: 550px;
+  background-color: rgba(211, 212, 248, 0.73);
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#litterbox {
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+p {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  background: linear-gradient(#5b5ca4, #8283ba, #5b5ca4);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #8283ba;
+}
+button:hover {
+  background: linear-gradient(#8283ba, #5b5ca4, #8283ba);
+}

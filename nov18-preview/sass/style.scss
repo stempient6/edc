@@ -1,0 +1,72 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+body{
+	background-color: hsla(257, 9%, 23%, 1);
+	font-family: sans-serif;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: space-around;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: space-around;
+}
+.mainContainer {
+	position: relative;
+	background-color: white;
+	width: 550px;
+	height: 600px;
+	margin: 20px 10px;
+
+	img{
+		width: 550px;
+		height: auto;
+//		transition: a ease-in-out;
+	}
+}
+.top{
+	position: relative;
+	width: 100%;
+	height: 60%;
+//	padding: 15px;
+	overflow: hidden;
+}
+.bottom{
+	padding: 15px;
+
+}
+button {
+	background-color: hsla(56, 48%, 24%, .5);
+	border: 1px solid hsla(56, 48%, 15%, 1);
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+.slider{
+	box-sizing: border-box;
+	position: absolute;
+	top: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	background-color: hsla(56, 48%, 0%, 0.9);
+	color:white;
+	i {
+		font-size: 250%;
+		margin: 10px 0;
+	}
+	
+}
+.fa{
+	display: block;
+	width: 10%;
+}

@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body font {
+  size: 100%;
+  weight: 200;
+  family: sans-serif;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input, button {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 5px;
+  font: inherit;
+}
+
+button {
+  background-color: orchid;
+  border-color: #d047ca;
+  color: white;
+}
+
+main {
+  width: 75vw;
+  padding: 20px;
+  margin: 10vw auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+#output, #input {
+  border: inherit;
+  border-radius: inherit;
+  padding: inherit;
+  background-color: lightgray;
+}
+
+#output {
+  margin-bottom: 20px;
+}
+#output input {
+  text-align: center;
+}
+
+#input div {
+  width: 30%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#input div input {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#input {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
