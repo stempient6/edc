@@ -52,7 +52,7 @@ test/out-fixtures/*
 test/watch-*.txt
 gulp.1
 
-# Meida files #
+# Media files #
 ######################
 *.mp4
 *.mp3
