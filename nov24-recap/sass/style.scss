@@ -1,0 +1,106 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+$black: hsla(335, 100%, 3%, 1);
+$ltblack: lighten($black, 10%);
+$white: hsla(240, 100%, 86%, 1);
+$drkwhite: darken($white, 10%);
+$red: hsla(0, 100%, 24%, 1);
+$ltred: lighten($red, 10%);
+$drkred: darken($red, 10%);
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: $black;
+	width: 100%;
+	color: $drkwhite;
+	padding: 20px;
+}
+header {
+	padding: 20px;
+	position: relative;
+	.fa-cog{
+		position: absolute;
+		top: 25px;
+		right: 5%;
+		transition: all 1000ms ease-in-out;
+	}
+	ul{
+		display: flex;
+		justify-content: space-around;
+		background: linear-gradient(black, $ltblack, black);
+		
+		li{
+			color: $drkwhite;
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			border: 1px solid black;
+			padding:10px;
+			a{
+				width: 100%;
+				height: 100%;
+				display: block;
+				&:hover{
+					color: white;
+				}
+			}
+		}
+	}
+	button{
+		background: linear-gradient(black, $ltblack, black);
+		border: black;
+		padding: 10px 20px;
+		color: $white;
+		&:hover{
+			background: linear-gradient(black, black, black);
+		}
+	}
+}
+.headerBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 35vw;
+	color: $white;
+	background-image: url('../img/clouds.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+main {
+	background-color: $white;
+	color: $ltred;
+	padding: 10px;
+}
+.headerObj {
+	background-color: $white;
+	color: $black;
+}
+.bodyObj {
+	background-color: gray;
+	color: $black;
+}
+.headerBoxObj {
+	background-image: url('../img/sunrise.png');
+}
+.iconObj{
+	right: 95%;
+}
+.mainObj {
+	color: $black;
+	background-color: white;
+}
+.fix_nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}

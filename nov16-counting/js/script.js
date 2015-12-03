@@ -1,7 +1,7 @@
 /* js goes here */
 
 
-var kittens = Math.floor((Math.random() * 50) + 1),
+var kittens = Math.floor((Math.random() * 30) + 1),
 	litterBox = document.getElementById("litterbox"); 
 console.log(litterBox);
 

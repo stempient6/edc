@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 255px;
+  margin: 5vw auto;
+}
+ul img {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul li {
+  position: relative;
+}
+ul li .preview {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  z-index: 100;
+}

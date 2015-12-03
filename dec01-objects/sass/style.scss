@@ -1,0 +1,12 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		margin: 2px;
+	}
+}

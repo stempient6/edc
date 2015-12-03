@@ -1,0 +1,49 @@
+@import "reset";
+@import "fontawesome";
+html {
+	background-image: url(../img/wood.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+
+}
+body{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	>main img {
+		border-radius: 10px;
+		box-shadow: 0 5px 10px transparentize(black, .25);
+		margin: 5px;
+	}
+}
+.overlay {
+	display: none;
+	position: absolute;	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: transparentize(black, .25);
+	z-index: 1000;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	img {
+		max-width: 90%;
+		max-height: 90%;				
+	}
+	i{
+		position: absolute;
+		z-index: 2000;
+		color: white;
+		margin-top: -25%;
+
+	}
+}
+div.closer {
+	z-index: 3000;
+	color: white;
+}

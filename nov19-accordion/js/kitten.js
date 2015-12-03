@@ -1,4 +1,4 @@
-var kittens = Math.ceil(Math.random() * 50),
+var kittens = Math.ceil(Math.random() * 30),
 	litterBox = document.getElementById("litterbox"),
 	guess = document.getElementsByTagName('input')[0],
 	subMit = document.getElementsByTagName('button')[0],
@@ -30,7 +30,7 @@ function enterEvent(event){
  });
 
  function litter(){
- 	kittens = Math.ceil(Math.random() * 50);
+ 	kittens = Math.ceil(Math.random() * 30);
  	litterBox.innerHTML = '';
  	for(var i = 1;i < kittens; i++){
  	litterBox.innerHTML += '<img class="trainimg" src="img/train.png" height="auto" width="100" alt="">';
@@ -40,6 +40,7 @@ function enterEvent(event){
 function cleargame(){
 	litterBox.innerHTML = '';
 	guess.value = '';
+	
 }
 function reLoad(){
 	location.reload(); 

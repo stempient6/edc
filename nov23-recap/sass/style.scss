@@ -1,0 +1,110 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+$black: hsla(0, 0%, 9%, 1);
+$white: hsla(0, 0%, 96%, 1);
+$red: hsla(0, 100%, 21%, 1);
+$lightwhite: hsla(0, 0%, 96%, .5);
+body{
+	position: relative;
+	color: black;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-bottom: 1px solid $red;
+	position: relative;
+	background-color: white;
+	z-index: 50;
+	h1 {
+		text-transform: uppercase;
+		margin: 5px;
+	}
+
+}
+header div{
+	display: flex;
+	width: 50%;
+	box-sizing: borderbox;
+	justify-content: space-around;
+	align-items: center;
+}
+.fa-cogs{
+	font-size: 2em;
+}
+.headerright{
+	justify-content: flex-end;
+}
+.headerleft{
+	ul{
+		display: flex;
+		
+		height: 100%;
+		
+
+		li{
+			padding: 5px 20px;
+			position: relative;			
+			z-index: 20;
+
+		}
+	}
+}
+.hide {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+
+	top: -260px;
+
+	//box-shadow: 5px 5px 5px $black;
+
+	transition: all 400ms ease-in-out;
+	z-index: 10;
+	li {
+		background-color: $lightwhite;
+		//border: 1px solid $black;
+	}
+}
+.visible {
+	top: 40px;
+	z-index: 10;
+}
+form{
+		position: absolute;
+		top: -115px;
+		right: 75px;
+		background-color: lighten($black, 20);
+		padding: 20px;
+		border: 1px solid black;
+		border-radius: 10px;
+		box-shadow: 10px 10px 10px $black;
+		transition: all 200ms ease-in-out;
+		color: $white;
+
+		
+}
+main {
+	display: flex;
+	img{
+		float: left;
+		margin: 5px;
+	}
+	div {
+		padding: 20px;
+	}
+}
+section div {
+	text-align: center;
+
+}
+// select{
+// 	display: flex;
+// 	justify-content: space-between;
+// }
+footer {
+	text-align: center;
+}
