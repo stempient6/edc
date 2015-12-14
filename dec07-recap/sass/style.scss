@@ -1,0 +1,77 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+body{
+	font:{
+		family: sans-serif;
+		weight: 200;
+		size: 100%;
+	}
+}
+header {
+	padding: 50px;
+	background-image: url("images/overlay.png"), linear-gradient(45deg, hsla(244, 23%, 36%, 1) 0%, hsla(306, 38%, 35%, 1) 100%);
+	display: flex;
+	color: white;
+	margin-bottom: 50px;
+	div{
+		padding: 70px 50px 50px 50px;
+		margin: 25px;
+		font-weight: 900;
+		color: darken(white, 20%);
+		&:first-of-type{
+			border-right: 1px solid white;
+		}
+		&:last-of-type{
+			color: darken(white, 50%);
+		}
+	}
+	button {		
+	    background-color: hsla(164, 100%, 37%, 1);
+	    color: hsl(0, 0%, 100%) !important;
+	    padding: 10px 20px;
+	    border: 1px solid hsla(164, 100%, 37%, 1);
+	    border-radius: 20px;
+    &:hover{
+    	background-color: hsla(164, 100%, 37%, .2);
+		}
+  	}
+  }
+  ul {
+  	display: flex;
+  	width: 100%;
+  	height: 100%;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: left;
+  	li{
+  		display: block;
+  	}
+  }
+  main{
+  	display: flex;
+  	padding: 50px;
+  	border-bottom: 2px solid darken(white, 50%);
+  	div{
+  		flex: 1;
+  	}
+  }
+ .middle {
+ 	margin-top: 20px;
+ 	padding: 20px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	section{
+ 		padding:20px 20px 0 20px;
+ 		margin: 50px;
+ 		border-bottom: 2px solid darken(white, 30%);
+ 	}
+ }
+ .midSection {display: flex;
+	div{
+		padding: 20px;
+	}
+ }

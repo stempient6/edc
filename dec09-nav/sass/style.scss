@@ -1,0 +1,92 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+
+$key: hsla(200, 48%, 19%, 1);
+$keylite: lighten($key, 10);
+$keydark: darken($key, 10);
+
+body {
+	font: {
+		family: sans-serif;
+		weight: 100;
+		size: 100%;
+	}
+	line-height: 1.5;
+}
+#global {
+	display: flex;
+	header {
+		flex: 1;
+	}
+	main {
+		flex: 3;
+		padding: 10px;
+	}
+	&.hideMenu{
+		header {
+			flex: 0;
+			padding: 0;
+		}
+		main {
+			flex: 3;
+		}
+	}
+	&.toggleMenu {
+		header {
+			order: 1;
+		}
+		main {
+			order: 0;
+		}
+	}
+}
+@media screen and (max-width: 700px){
+	#global{
+		flex-direction: column;
+		main, header {
+			order: 0 !important;
+		}
+	i#menuToggleBtn,
+	i#menuHideBtn {
+		display: none;
+		}
+	}
+}
+
+#global {
+	i {
+		position: absolute;
+		top: 0;
+		margin: 5px;
+		cursor: pointer;
+		&#menuToggleBtn {
+			right: 0;
+		}
+		&#menuHideBtn {
+			left: 0;
+		}
+	}
+	&.toggleMenu{
+		i#menuToggleBtn {
+			left: 0;
+		}
+		i#menuHideBtn {
+			left: auto;
+			right: 0;
+		}
+	}
+
+}
+header {
+	background-color: $key;
+	color: white;
+	position: relative;
+	transition: flex 250ms ease-in-out;
+	padding: 10px;
+	overflow: hidden;
+}
+main {
+	position: relative;
+}

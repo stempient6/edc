@@ -1,0 +1,114 @@
+@import "variables";
+@import "reset";
+@import url(http://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css);
+
+/* sass goes here */
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font:{
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+}
+div.dash, div.gas {
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+}
+input {
+	padding: 5px;
+	margin: 0;
+	font: inherit;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: right;
+	font-size: 120%;
+	width: 100px;
+}
+a {
+	width: 1.25em;
+	height: 1.25em;
+	font-size: 250%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.dash a {
+	margin: 0 20px;
+
+	&:first-child {color: lightgray;}
+	&:first-child.active {color: gold;}
+
+	&:last-child {color: black;}
+	&:last-child.active {color: limegreen;}
+}
+div.gas a {
+	border: 1px solid black;
+	border-radius: 100%;
+
+	&:only-child {color: black;border-color: black;}
+	&:only-child.active {color: crimson;border-color: crimson;}
+}
+@import "variables";
+@import "reset";
+@import url(http://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css);
+
+/* sass goes here */
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font:{
+		family: sans-serif;
+		size: 100%;
+		weight: 200;
+	}
+}
+div.dash, div.gas {
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+}
+input {
+	padding: 5px;
+	margin: 0;
+	font: inherit;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: right;
+	font-size: 120%;
+	width: 100px;
+}
+a {
+	width: 1.25em;
+	height: 1.25em;
+	font-size: 250%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.dash a {
+	margin: 0 20px;
+
+	&:first-child {color: lightgray;}
+	&:first-child.active {color: gold;}
+
+	&:last-child {color: black;}
+	&:last-child.active {color: limegreen;}
+}
+div.gas a {
+	border: 1px solid black;
+	border-radius: 100%;
+
+	&:only-child {color: black;border-color: black;}
+	&:only-child.active {color: crimson;border-color: crimson;}
+}

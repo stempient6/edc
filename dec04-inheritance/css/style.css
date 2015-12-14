@@ -1,0 +1,209 @@
+@import url(http://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css);
+@import url(http://cdn.materialdesignicons.com/1.3.41/css/materialdesignicons.min.css);
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  font-size: 100%;
+  font-weight: 200;
+}
+
+div.dash, div.gas {
+  margin: 30px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input {
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 120%;
+  width: 100px;
+}
+
+a {
+  width: 1.25em;
+  height: 1.25em;
+  font-size: 250%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.dash a {
+  margin: 0 20px;
+}
+div.dash a:first-child {
+  color: lightgray;
+}
+div.dash a:first-child.active {
+  color: gold;
+}
+div.dash a:last-child {
+  color: black;
+}
+div.dash a:last-child.active {
+  color: limegreen;
+}
+
+div.gas a {
+  border: 1px solid black;
+  border-radius: 100%;
+}
+div.gas a:only-child {
+  color: black;
+  border-color: black;
+}
+div.gas a:only-child.active {
+  color: crimson;
+  border-color: crimson;
+}
+
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  font-size: 100%;
+  font-weight: 200;
+}
+
+div.dash, div.gas {
+  margin: 30px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input {
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 120%;
+  width: 100px;
+}
+
+a {
+  width: 1.25em;
+  height: 1.25em;
+  font-size: 250%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.dash a {
+  margin: 0 20px;
+}
+div.dash a:first-child {
+  color: lightgray;
+}
+div.dash a:first-child.active {
+  color: gold;
+}
+div.dash a:last-child {
+  color: black;
+}
+div.dash a:last-child.active {
+  color: limegreen;
+}
+
+div.gas a {
+  border: 1px solid black;
+  border-radius: 100%;
+}
+div.gas a:only-child {
+  color: black;
+  border-color: black;
+}
+div.gas a:only-child.active {
+  color: crimson;
+  border-color: crimson;
+}

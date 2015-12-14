@@ -239,6 +239,11 @@ section {
 		}
 	}
 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
 //Enrique Meza http://mezafilms.com
 @media (max-width: 800px) {
   .services {
