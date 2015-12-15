@@ -2801,6 +2801,12 @@ section {
   color: gray;
 }
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
+
 @media (max-width: 800px) {
   .services .fa {
     font-size: 1em;
